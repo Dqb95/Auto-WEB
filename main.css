@@ -1,70 +1,60 @@
-  .flex-container {
-    display: flex;
-  }
 
-  .flex-container > div {
-    margin: 10px;
-    padding: 20px;
-  }
+.sidenav {
+  height: 150px;
+  width: 100px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color:white;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
 
-  ul {
-    border-style: solid;
-    border-color: grey;
-    list-style-type: none;
-    margin-right: 0px;
-    padding: 0;
-    overflow: hidden;
-  }
-  
-  li {
-    float: left;
-  }
-  
-  li a, .dropbtn {
-    display: inline-block;
-    color: black;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
-  
-  li a:hover, .dropdown:hover .dropbtn {
-    background-color:white;
-  }
-  
-  li.dropdown {
-    display: inline-block;
-  }
-  
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 4px 4px 8px 0px rgba(0,0,0,0.2);
-  }
-  
-  .dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-  }
-  
-  .dropdown-content a:hover {background-color: #f1f1f1;}
-  .dropdown:hover .dropdown-content {
-    display: block;
-  }
+.sidenav a, .dropdown-btn {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #7a4949;
+  display: block;
+  border: none;
+  background: none;
+  width:100%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+}
+
+.sidenav a:hover, .dropdown-btn:hover {
+  color:black;
+}
+
+
 
   .title {
       text-align: center;
-      font-family: Arial, Helvetica, sans-serif;
       margin-top: -21px;
+     
   }
 
   body {
     font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .flex-container {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+    margin: -30px;
+    padding: 50px;
+  }
+
+  .flex-container > div {
+    width: 500px;
+    height: 400px;
+    margin-left: -65px;
+    margin-top: -100px;
+    margin-right: 20px;
   }
 
   .flip-card1 {
@@ -250,9 +240,7 @@
     font-family: fantasy;
   }
 
-  * {
-    box-sizing: border-box;
-  }
+  
   
   input[type=text], select, textarea {
     width: 60%;
@@ -309,6 +297,9 @@
     }
   }
 
-  
+  .info {
+    margin-top: 130px;
+  }
 
+  
   
